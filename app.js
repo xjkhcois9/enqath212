@@ -7,7 +7,7 @@ document.getElementById('join-form').addEventListener('submit', async (e)=>{
     traits: document.getElementById('traits').value.split(',').map(t=>t.trim())
   };
 
-  const res = await fetch('data/communities.json');
+  const res = await fetch('communities.json');
   const communities = await res.json();
 
   const scored = communities.map(c => ({
