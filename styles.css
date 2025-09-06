@@ -1,0 +1,53 @@
+body {
+  font-family: Tahoma, sans-serif;
+  background: #101820;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 { color: #00e676; }
+
+form {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background: #00e676;
+  color: #000;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.community {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.community button {
+  margin-top: 8px;
+}
