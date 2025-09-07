@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بيئات تواصل مغلقة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="main">
+    <h1>انضم إلى بيئتك المناسبة</h1>
+    <form id="join-form">
+      <label>اسمك:
+        <input type="text" id="name" required>
+      </label>
+      <label>مهنتك:
+        <input type="text" id="profession" required>
+      </label>
+      <label>صفاتك:
+        <input type="text" id="traits" placeholder="مثال: اجتماعي, مبدع" required>
+      </label>
+      <button type="submit">ابحث عن بيئة مناسبة</button>
+    </form>
+
+    <section id="suggestions">
+      <h2>بيئات مقترحة</h2>
+      <div id="results"></div>
+    </section>
+
+    <section id="create-community">
+      <h2>إنشاء بيئة جديدة</h2>
+      <form id="create-form">
+        <label>اسم البيئة:
+          <input type="text" id="c-name" required>
+        </label>
+        <label>الوصف:
+          <input type="text" id="c-description" required>
+        </label>
+        <label>المهن (افصل بفاصلة):
+          <input type="text" id="c-professions" required>
+        </label>
+        <label>السمات (افصل بفاصلة):
+          <input type="text" id="c-tags" required>
+        </label>
+        <button type="submit">إضافة البيئة</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- قسم الغرف -->
+  <div class="container hidden" id="room">
+    <button onclick="backToMain()">⬅ عودة</button>
+    <h2 id="room-title"></h2>
+    <div id="messages" class="messages"></div>
+    <textarea id="chat" placeholder="اكتب رسالتك هنا..."></textarea>
+    <button onclick="sendMessage()">إرسال</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
